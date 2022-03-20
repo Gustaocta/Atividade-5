@@ -1,0 +1,214 @@
+/* CSS reset */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main {
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #b8ee08;
+    text-align: center;
+    font-size:50px;
+    font-family: sans-serif;
+    font-style: bold;
+}
+
+#lado_direito {
+    width: 25%;
+    height: 425px;
+    background-color: #1eeeee;
+    float: left;
+}
+
+#lado_esquerdo>nav {
+    width: 95%;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #FFF;
+    display: none;
+    flex-direction: column;
+}
+
+#lado_direito>nav> a {
+    width: 96%;
+    height: 38px;
+    border-bottom: 2px solid #FFF;
+    background-color: #7a7a7a;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#lado_direito>nav>a:hover {
+    transition: 2s all;
+    background-color: white;
+    border-color: black;
+}
+
+#lado_direito>aside {
+    width: 96.5%;
+    height: 200px;
+    margin: auto;
+    background-color: #FFF;
+}
+
+#lado_esquerdo {
+    width: 75%;
+    height: 425px;
+    background-color: #7e447e;
+    float: left;
+}
+
+#lado_esquerdo>article {
+    width: 97.5%;
+    height: 93%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #FFF;
+}
+
+#lado_esquerdo>article> #titulo {
+    width: 100%;
+    height: 40px;
+    background-color: #56a3c2;
+}
+
+#lado_esquerdo>article>#area_de_texto {
+    width: 100%;
+    height: 125px;
+    margin-top: 10px;
+    background-color: #c2492b;
+}
+
+#lado_esquerdo>article>#area_de_imagem {
+    width: 100%;
+    height: 184.5px;
+    margin-top: 10px;
+    background-color: #c45f;
+}
+
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: #a52;
+    clear: left;
+}
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        height: 50px;
+    }
+
+
+    #lado_direito {
+        width: 100%;
+        height: 150px;
+        clear: left;
+    }
+
+
+    #lado_direito>nav {
+        width: 100%;
+        height: 150px;
+        margin: auto;
+        margin-bottom: 10px;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #lado_direito>nav> a{
+        width: 100%;
+        height: 28px;
+        border-bottom: 2px solid #FFF;
+        background-color: #c4c4c4;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #lado_direito>aside {
+        display: none;
+    }
+
+    #lado_esquerdo {
+        width: 100%;
+        height: auto;
+        clear:left
+    }
+
+    footer {
+        height: 150px;
+    }
+
+ 
+}
+
+@media only screen and (min-width: 481px) {
+    @media only screen and (max-width: 720px) {
+        header {
+            height: 50px;
+        }
+    
+    
+        #rightSection {
+            width: 100%;
+            height: 30px;
+            clear: left;
+        }
+    
+    
+        #rightSection>nav {
+            width: 100%;
+            height: 30px;
+            margin: auto;
+            margin-bottom: 10px;
+            background-color: #FFFF;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+    
+        #rightSection >nav>a{
+            width: 20%;
+            height: 28px;
+            border-bottom: 2px solid #FFFF;
+            background-color: #838181;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        #rightSection>aside {
+            display: none;
+        }
+    
+        #leftSection {
+            width: 100%;
+            height: auto;
+            clear:left
+        }
+    
+        footer {
+            height: 150px;
+        }
+    
+    } 
+}
